@@ -12,17 +12,17 @@
     <meta name="author" content="Luka Cvetinovic for Codrops"/>
     <!-- Favicons (created with http://realfavicongenerator.net/)-->
     <link rel="apple-touch-icon" sizes="57x57"
-          href="${assetPath(src: 'images/cardio/favicons/apple-touch-icon-57x57.png')}">
+          href="${assetPath(src: 'cardio/favicons/apple-touch-icon-57x57.png')}">
     <link rel="apple-touch-icon" sizes="60x60"
-          href="${assetPath(src: 'images/cardio/favicons/apple-touch-icon-60x60.png')}">
-    <link rel="icon" type="image/png" href="${assetPath(src: 'images/cardio/favicons/favicon-32x32.png')}"
+          href="${assetPath(src: 'cardio/favicons/apple-touch-icon-60x60.png')}">
+    <link rel="icon" type="image/png" href="${assetPath(src: 'cardio/favicons/favicon-32x32.png')}"
           sizes="32x32">
-    <link rel="icon" type="image/png" href="${assetPath(src: 'images/cardio/favicons/favicon-16x16.png')}"
+    <link rel="icon" type="image/png" href="${assetPath(src: 'cardio/favicons/favicon-16x16.png')}"
           sizes="16x16">
-    <link rel="manifest" href="${assetPath(src: 'images/cardio/favicons/manifest.json')}">
-    <link rel="shortcut icon" href="${assetPath(src: 'images/cardio/favicons/favicon.ico')}">
+    <link rel="manifest" href="${assetPath(src: 'cardio/favicons/manifest.json')}">
+    <link rel="shortcut icon" href="${assetPath(src: 'cardio/favicons/favicon.ico')}">
     <meta name="msapplication-TileColor" content="#00a8ff">
-    <meta name="msapplication-config" content="${assetPath(src: 'images/cardio/favicons/browserconfig.xml')}">
+    <meta name="msapplication-config" content="${assetPath(src: 'cardio/favicons/browserconfig.xml')}">
     <meta name="theme-color" content="#ffffff">
     <!-- Normalize -->
     <asset:stylesheet src="cardio/normalize.css"/>
@@ -42,7 +42,7 @@
 
 <body>
 <div class="preloader">
-    <img src="img/loader.gif" alt="Preloader image">
+    <img src="../cardio/loader.gif" alt="Preloader image">
 </div>
 <nav class="navbar">
     <div class="container">
@@ -56,7 +56,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img src="${assetPath(src: 'cardio/logo.png')}" data-active-url="${assetPath(src: 'cardio/logo-active.png')}" alt="">
+                <img src="${assetPath(src: 'cardio/logo.png')}"
+                     data-active-url="${assetPath(src: 'cardio/logo-active.png')}" alt="">
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -246,7 +247,7 @@
             <div class="col-md-4">
                 <div class="service">
                     <div class="icon-holder">
-                        <img src="img/icons/heart-blue.png" alt="" class="icon">
+                        <asset:image src="cardio/icons/heart-blue.png" class="icon"/>
                     </div>
                     <h4 class="heading">Cardio Training</h4>
 
@@ -257,7 +258,7 @@
             <div class="col-md-4">
                 <div class="service">
                     <div class="icon-holder">
-                        <img src="img/icons/guru-blue.png" alt="" class="icon">
+                        <asset:image src="cardio/icons/guru-blue.png" class="icon"/>
                     </div>
                     <h4 class="heading">Yoga Pilates</h4>
 
@@ -268,7 +269,7 @@
             <div class="col-md-4">
                 <div class="service">
                     <div class="icon-holder">
-                        <img src="img/icons/weight-blue.png" alt="" class="icon">
+                        <asset:image src="cardio/icons/weight-blue.png" class="icon"/>
                     </div>
                     <h4 class="heading">Power Training</h4>
 
@@ -290,14 +291,13 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="team text-center">
-                    <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;">
+                    <div class="cover" style="background:url('../cardio/team/team-cover1.jpg'); background-size:cover;">
                         <div class="overlay text-center">
                             <h3 class="white">$69.00</h3>
                             <h5 class="light light-white">1 - 5 sessions / month</h5>
                         </div>
                     </div>
-                    <img src="img/team/team3.jpg" alt="Team Image" class="avatar">
-
+                    <asset:image src="cardio/team/team3.jpg" alt="Team Image" class="avatar"/>
                     <div class="title">
                         <h4>Ben Adamson</h4>
                         <h5 class="muted regular">Fitness Instructor</h5>
@@ -308,14 +308,13 @@
 
             <div class="col-md-4">
                 <div class="team text-center">
-                    <div class="cover" style="background:url('img/team/team-cover2.jpg'); background-size:cover;">
+                    <div class="cover" style="background:url('/cardio/team/team-cover2.jpg'); background-size:cover;">
                         <div class="overlay text-center">
                             <h3 class="white">$69.00</h3>
                             <h5 class="light light-white">1 - 5 sessions / month</h5>
                         </div>
                     </div>
-                    <img src="img/team/team1.jpg" alt="Team Image" class="avatar">
-
+                    <asset:image src="cardio/team/team1.jpg" alt="Team Image" class="avatar"/>
                     <div class="title">
                         <h4>Eva Williams</h4>
                         <h5 class="muted regular">Personal Trainer</h5>
@@ -327,13 +326,13 @@
 
             <div class="col-md-4">
                 <div class="team text-center">
-                    <div class="cover" style="background:url('img/team/team-cover3.jpg'); background-size:cover;">
+                    <div class="cover" style="background:url('/cardio/team/team-cover3.jpg'); background-size:cover;">
                         <div class="overlay text-center">
                             <h3 class="white">$69.00</h3>
                             <h5 class="light light-white">1 - 5 sessions / month</h5>
                         </div>
                     </div>
-                    <img src="img/team/team2.jpg" alt="Team Image" class="avatar">
+                    <asset:image src="cardio/team/team2.jpg" alt="Team Image" class="avatar"/>
 
                     <div class="title">
                         <h4>John Phillips</h4>
@@ -356,7 +355,7 @@
         <div class="row no-margin">
             <div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
                 <div class="pricing">
-                    <div class="box-main active" data-img="img/pricing1.jpg">
+                    <div class="box-main active" data-img="${assetPath(src: 'cardio/pricing1.jpg')}">
                         <h4 class="white">Yoga Pilates</h4>
                         <h4 class="white regular light">$850.00 <span class="small-font">/ year</span></h4>
                         <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
@@ -375,7 +374,7 @@
                 </div>
 
                 <div class="pricing">
-                    <div class="box-main" data-img="img/pricing2.jpg">
+                    <div class="box-main" data-img="${assetPath(src: 'cardio/pricing2.jpg')}">
                         <h4 class="white">Cardio Training</h4>
                         <h4 class="white regular light">$100.00 <span class="small-font">/ year</span></h4>
                         <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
