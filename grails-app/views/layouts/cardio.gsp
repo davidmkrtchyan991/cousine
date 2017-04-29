@@ -51,7 +51,7 @@
 <g:render template="/layouts/cardio/footer"/>
 
 <!-- Scripts -->
-%{--<asset:javascript src="jquery-2.2.0.min.js"/>--}%
+<asset:javascript src="jquery-2.2.0.min.js"/>
 <asset:javascript src="cardio/owl.carousel.min.js"/>
 <asset:javascript src="cardio/bootstrap.min.js"/>
 <asset:javascript src="cardio/wow.min.js"/>

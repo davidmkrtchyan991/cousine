@@ -210,7 +210,7 @@
                 <div class="col-md-4">
                     <div class="team text-center">
                         <div class="cover"
-                             style="background:url('../cardio/team/team-cover1.jpg'); background-size:cover;">
+                             style="background:url('assets/cardio/team/team-cover1.jpg'); background-size:cover;">
                             <div class="overlay text-center">
                                 <h3 class="white">$69.00</h3>
                                 <h5 class="light light-white">1 - 5 sessions / month</h5>
@@ -228,7 +228,7 @@
                 <div class="col-md-4">
                     <div class="team text-center">
                         <div class="cover"
-                             style="background:url('/cardio/team/team-cover2.jpg'); background-size:cover;">
+                             style="background:url('assets/cardio/team/team-cover2.jpg'); background-size:cover;">
                             <div class="overlay text-center">
                                 <h3 class="white">$69.00</h3>
                                 <h5 class="light light-white">1 - 5 sessions / month</h5>
@@ -247,7 +247,7 @@
                 <div class="col-md-4">
                     <div class="team text-center">
                         <div class="cover"
-                             style="background:url('/cardio/team/team-cover3.jpg'); background-size:cover;">
+                             style="background:url('assets/cardio/team/team-cover3.jpg'); background-size:cover;">
                             <div class="overlay text-center">
                                 <h3 class="white">$69.00</h3>
                                 <h5 class="light light-white">1 - 5 sessions / month</h5>
