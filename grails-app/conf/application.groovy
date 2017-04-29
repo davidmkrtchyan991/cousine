@@ -1,4 +1,5 @@
 // Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.active = false
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'cousine.security.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'cousine.security.UserRole'
 grails.plugin.springsecurity.authority.className = 'cousine.security.Role'
