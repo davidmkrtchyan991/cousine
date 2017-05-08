@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header starts*/
+.header {
+  height: 65px;
+  border-bottom: 1px solid gainsboro;
+  background-color: white;
+  position: relative;
+  z-index: 9999;
+}
+.userpanel {
+  height: 100%;
+}
+.userpanel > div {
+  float: left;
+  height: 100%;
+}
+.notifications, .messages {
+  width: 50px;
+}
+.avatar {
+  width: 120px;
+}
+.notifications > .dropdown, .messages > .dropdown, .avatar > .dropdown{
+  margin-top: 17px;
+}
+.notifications > .dropdown .dropdown-menu, .messages > .dropdown .dropdown-menu, .avatar > .dropdown .dropdown-menu{
+  left: auto;
+  right: 0;
+}
+
+/*Left sidebar start*/
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 270px;
+  height: 100%;
+  z-index: 999;
+  border-right: 1px solid gainsboro;
+  padding-top: 65px;
+}
+
+.sidebar .navbar-nav > li > a {
+  color: #00a8ff;
+}
+
+/*Content start*/
+.content {
+  width: calc(100% - 270px);
+  float: right;
+  height: 100%;
+}
