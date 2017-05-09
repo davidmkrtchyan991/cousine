@@ -1,6 +1,8 @@
 package cousine.dish
 
-class Ingredient {
+import domain.Editability
+
+class Ingredient implements Editability {
 
     BigDecimal calories
     String name

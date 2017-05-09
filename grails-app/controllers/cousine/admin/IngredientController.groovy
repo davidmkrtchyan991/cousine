@@ -16,7 +16,9 @@ class IngredientController {
     }
 
     def show(Long id) {
-        render(view: '/admin/ingredient/show', model: [ingredientInstance: Ingredient.get(params.long('id'))])
+        Ingredient ingredientInstance = Ingredient.get(params.long('id'))
+        ingredientInstance.isEditable = false
+        render(view: '/admin/ingredient/show', model: [ingredientInstance: ingredientInstance])
     }
 
     def save() {
@@ -24,7 +26,7 @@ class IngredientController {
         if (ingredient.hasErrors()) {
             render(view: '/admin/ingredient/edit', model: [ingredientInstance: ingredient, formAction: 'save'])
         } else {
-            render(view: '/admin/ingredient/show', model: [ingredientInstance: ingredient])
+            redirect(action: 'show', params: [id: ingredient.id])
         }
     }
 
@@ -33,7 +35,7 @@ class IngredientController {
         if (ingredient.hasErrors()) {
             render(view: '/admin/ingredient/edit', model: [ingredientInstance: ingredient, formAction: 'update'])
         } else {
-            render(view: '/admin/ingredient/show', model: [ingredientInstance: ingredient])
+            redirect(action: 'show', params: [id: ingredient.id])
         }
     }
 

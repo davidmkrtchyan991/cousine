@@ -17,6 +17,7 @@ class DishController {
 
     def show(Long id) {
         Dish dish = Dish.get(params.long('id'))
+        dish.isEditable = false
         render(view: '/admin/dish/show', model: [dishInstance: dish, ingredients: dish.ingredients])
     }
 
@@ -25,7 +26,7 @@ class DishController {
         if (dish.hasErrors()) {
             render(view: '/admin/dish/edit', model: addIngredientsListToModel([dishInstance: dish, formAction: 'save']))
         } else {
-            render(view: '/admin/dish/show', model: [dishInstance: dish, 'ingredients': dish.ingredients])
+            redirect(action: 'show', params: [id: dish.id])
         }
     }
 
@@ -34,7 +35,7 @@ class DishController {
         if (dish.hasErrors()) {
             render(view: '/admin/dish/edit', model: addIngredientsListToModel([dishInstance: dish, formAction: 'update']))
         } else {
-            render(view: '/admin/dish/show', model: [dishInstance: dish, 'ingredients': dish.ingredients])
+            redirect(action: 'show', params: [id: dish.id])
         }
     }
 

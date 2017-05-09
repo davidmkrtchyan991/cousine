@@ -1,6 +1,8 @@
 package cousine.dish
 
-class Dish {
+import domain.Editability
+
+class Dish implements Editability{
 
     String publicReference
     String name
@@ -12,7 +14,6 @@ class Dish {
     static constraints = {
         publicReference nullable: true//TODO REMOVE
     }
-
 
     static WHITE_LIST = ['name', 'description']
 }
