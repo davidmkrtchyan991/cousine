@@ -1,4 +1,4 @@
-package security.commands
+package commands.security
 
 import grails.validation.Validateable
 

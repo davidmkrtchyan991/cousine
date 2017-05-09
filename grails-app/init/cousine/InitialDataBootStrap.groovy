@@ -12,7 +12,6 @@ class InitialDataBootStrap {
 
     def init = { servletContext ->
         if (Environment.current == Environment.DEVELOPMENT) {
-            createDishes()
             createCompanies()
         }
     }

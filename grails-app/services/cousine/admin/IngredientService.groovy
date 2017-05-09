@@ -1,5 +1,6 @@
 package cousine.admin
 
+import cousine.dish.Dish
 import cousine.dish.Ingredient
 import grails.transaction.Transactional
 import grails.web.databinding.DataBindingUtils

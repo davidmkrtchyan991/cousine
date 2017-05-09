@@ -1,6 +1,7 @@
 package cousine
 
-import security.commands.SignUpCommand
+import commands.security.SignUpCommand
+
 
 class SecurityController {
 

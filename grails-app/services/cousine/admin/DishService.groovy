@@ -1,6 +1,7 @@
 package cousine.admin
 
 import cousine.dish.Dish
+import cousine.dish.Ingredient
 import grails.transaction.Transactional
 import grails.web.databinding.DataBindingUtils
 
@@ -11,7 +12,7 @@ class DishService {
 
     Dish save() {
         Dish dish = new Dish()
-        DataBindingUtils.bindObjectToInstance(dish, getParams())
+        doBind(dish)
         if (dish.validate()) {
             dish.save(flush: true)
         }
@@ -20,10 +21,29 @@ class DishService {
 
     Dish update() {
         Dish dish = Dish.get(params.long('id'))
-        DataBindingUtils.bindObjectToInstance(dish, getParams())
+        doBind(dish)
         if (dish.validate()) {
             dish.save(flush: true)
         }
         dish
+    }
+
+
+    private doBind(Dish dish) {
+        DataBindingUtils.bindObjectToInstance(dish, getParams())
+        bindIngredients(dish)
+    }
+
+    private bindIngredients(Dish dish) {
+        List<Long> ingredientIDList = []
+        params.each { String key, String value ->
+            if (key.startsWith('ingredient_')) {
+                ingredientIDList.add(Long.valueOf(key.split('ingredient_').last()))
+            }
+        }
+        dish.ingredients?.clear()
+        ingredientIDList.each { Long id ->
+            dish.addToIngredients(Ingredient.get(id))
+        }
     }
 }
