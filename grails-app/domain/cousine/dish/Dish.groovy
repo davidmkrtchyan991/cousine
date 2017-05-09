@@ -6,7 +6,6 @@ class Dish {
     String name
     String description
 
-    List<Ingredient> ingredients
     List<DishImage> images
 
     static hasMany = [ingredients: Ingredient, images: DishImage]

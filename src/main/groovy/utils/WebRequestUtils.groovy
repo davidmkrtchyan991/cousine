@@ -4,7 +4,7 @@ import org.grails.web.servlet.mvc.GrailsWebRequest
 
 class WebRequestUtils {
 
-    public static getParams() {
+    public static Map getParams() {
         GrailsWebRequest.lookup().params
     }
 }

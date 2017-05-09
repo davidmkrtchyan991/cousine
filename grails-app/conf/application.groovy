@@ -26,3 +26,5 @@ grails.plugin.springsecurity.filterChain.chainMap = [
         [pattern: '/**', filters: 'JOINED_FILTERS']
 ]
 
+
+grails.gorm.failOnError = true

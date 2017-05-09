@@ -6,8 +6,10 @@ class Ingredient {
     String name
     String description
 
-    static belongsTo = [dish: Dish]
+    static hasMany = [dishes: Dish]
+    static belongsTo = Dish
 
     static constraints = {
+        calories nullable: true
     }
 }
