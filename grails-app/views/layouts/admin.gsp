@@ -181,43 +181,43 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li class="active">
-                    <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                </li>
-                <li class="active">
-                    <a href="index.html"><i class="fa fa-fw"></i> DISHES</a>
+                    <a href="#"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                </li>
-                <li>
-                    <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-                </li>
-                <li>
-                    <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                </li>
-                <li>
-                    <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                </li>
-                <li>
-                    <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                </li>
-                <li>
-                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i
-                            class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                    <ul id="demo" class="collapse">
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i
+                            class="fa fa-fw fa-arrows-v"></i> Dish <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo1" class="collapse sidebar-submenu">
                         <li>
-                            <a href="#">Dropdown Item</a>
+                            <a href="/dish/show">Show</a>
                         </li>
                         <li>
-                            <a href="#">Dropdown Item</a>
+                            <a href="/dish/create">Create</a>
+                        </li>
+                        <li>
+                            <a href="/dish/update">Update</a>
+                        </li>
+                        <li>
+                            <a href="/dish/delete">Delete</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                </li>
-                <li>
-                    <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i
+                            class="fa fa-fw fa-arrows-v"></i> Ingredients <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo2" class="collapse sidebar-submenu">
+                        <li>
+                            <a href="/ingredient/show">Show</a>
+                        </li>
+                        <li>
+                            <a href="/ingredient/create">Create</a>
+                        </li>
+                        <li>
+                            <a href="/ingredient/update">Update</a>
+                        </li>
+                        <li>
+                            <a href="/ingredient/delete">Delete</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>

@@ -44,6 +44,10 @@
   border-right: 1px solid gainsboro;
   padding-top: 65px;
 }
+.sidebar-submenu {
+  margin-left: 60px;
+  list-style-type: none;
+}
 
 .sidebar .navbar-nav > li > a {
   color: #00a8ff;
@@ -54,4 +58,27 @@
   width: calc(100% - 270px);
   float: right;
   height: 100%;
+}
+.content .form-title{
+  margin: 20px 50px;
+}
+.content form {
+  width: 500px;
+  margin: 30px 50px;
+}
+.content form input {
+  margin: 2px;
+}
+.content form .submit-form {
+  border: 1px solid #00a8ff;
+  color: #00a8ff;
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  margin: 30px 0;
+}
+.content form .submit-form:hover {
+  border: 1px solid #00a8ff;
+  color: #fff;
+  background-color: #00a8ff;
 }

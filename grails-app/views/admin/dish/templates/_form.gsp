@@ -1,7 +1,5 @@
-<g:form name="dish-form" controller="dish" action="${formAction}">
+<h4 class="form-title">Create Dish</h4>
+<g:form name="dish-form" controller="dish" action="${formAction}" class="form-create">
     <g:render template="/admin/dish/templates/formFields"/>
-    <br>
-    <br>
-    <br>
-    <g:submitButton name="submit-dish-form"/>
+    <g:submitButton name="submit-dish-form" value="Create Dish" class="submit-form"/>
 </g:form>
