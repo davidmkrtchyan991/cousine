@@ -8,7 +8,7 @@
 <body>
 
 <content tag="pageContent">
-    DEFAULT PAGE
+       LIST
 </content>
 
 </body>

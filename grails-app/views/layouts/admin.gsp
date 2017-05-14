@@ -181,23 +181,23 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li class="active">
-                    <a href="#"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    <g:link controller="admin" action="index">
+                        <i class="fa fa-fw fa-dashboard"></i>  <g:message code="admin.dashboard.label"/>
+                    </g:link>
                 </li>
                 <li>
                     <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i
                             class="fa fa-fw fa-arrows-v"></i> Dish <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="demo1" class="collapse sidebar-submenu">
                         <li>
-                            <a href="/dish/show">Show</a>
+                            <g:link controller="dish" action="create">
+                                <g:message code="admin.create.label"/>
+                            </g:link>
                         </li>
                         <li>
-                            <a href="/dish/create">Create</a>
-                        </li>
-                        <li>
-                            <a href="/dish/update">Update</a>
-                        </li>
-                        <li>
-                            <a href="/dish/delete">Delete</a>
+                            <g:link controller="dish" action="list">
+                                <g:message code="admin.list.label"/>
+                            </g:link>
                         </li>
                     </ul>
                 </li>
@@ -206,16 +206,14 @@
                             class="fa fa-fw fa-arrows-v"></i> Ingredients <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="demo2" class="collapse sidebar-submenu">
                         <li>
-                            <a href="/ingredient/show">Show</a>
+                            <g:link controller="ingredient" action="create">
+                                <g:message code="admin.create.label"/>
+                            </g:link>
                         </li>
                         <li>
-                            <a href="/ingredient/create">Create</a>
-                        </li>
-                        <li>
-                            <a href="/ingredient/update">Update</a>
-                        </li>
-                        <li>
-                            <a href="/ingredient/delete">Delete</a>
+                            <g:link controller="ingredient" action="list">
+                                <g:message code="admin.list.label"/>
+                            </g:link>
                         </li>
                     </ul>
                 </li>

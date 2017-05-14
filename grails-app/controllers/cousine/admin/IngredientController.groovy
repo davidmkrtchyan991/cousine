@@ -39,4 +39,8 @@ class IngredientController {
         }
     }
 
+    def list() {
+        render(view: '/admin/ingredient/list', model: [ingredients: Ingredient.list()])
+    }
+
 }

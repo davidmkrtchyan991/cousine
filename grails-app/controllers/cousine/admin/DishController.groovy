@@ -39,6 +39,10 @@ class DishController {
         }
     }
 
+    def list() {
+        render(view: '/admin/dish/list', model: [dishes: Dish.list()])
+    }
+
     private Map addIngredientsListToModel(Map model) {
         model.put('ingredients', Ingredient.list(max: 15))
         model

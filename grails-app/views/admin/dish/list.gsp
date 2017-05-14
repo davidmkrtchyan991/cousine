@@ -8,7 +8,7 @@
 <body>
 
 <content tag="pageContent">
-    DEFAULT PAGE
+    <g:render template="/admin/dish/templates/dishTable"/>
 </content>
 
 </body>
