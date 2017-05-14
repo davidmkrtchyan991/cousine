@@ -38,7 +38,7 @@
     <!-- Main style -->
     <asset:stylesheet src="cardio/cardio.css"/>
 
-    <asset:stylesheet src="admin/main.css"/>
+    <asset:stylesheet src="admin/main.less"/>
 
     <g:layoutHead/>
 </head>
