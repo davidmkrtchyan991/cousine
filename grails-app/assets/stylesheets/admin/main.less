@@ -57,6 +57,7 @@
 .content {
   float: right;
   height: 100%;
+  width: calc(~"100% - 270px");
 }
 .content .form-title{
   margin: 20px 50px;
@@ -80,4 +81,28 @@
   border: 1px solid #00a8ff;
   color: #fff;
   background-color: #00a8ff;
+}
+
+/*Admin tables*/
+.list-table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  th {
+    text-align: left;
+    background: #f1f1f1;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  tr:nth-child(even) {
+    background-color: rgba(211, 211, 211, 0.08);
+  }
+  td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  .edit-controls {
+    max-width: 45px;
+    width: 45px;
+  }
 }

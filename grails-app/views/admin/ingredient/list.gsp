@@ -8,7 +8,8 @@
 <body>
 
 <content tag="pageContent">
-       LIST
+    <h4><g:message code="ingredient.table.name"/></h4>
+    <g:render template="/admin/ingredient/templates/ingredientTable"/>
 </content>
 
 </body>
