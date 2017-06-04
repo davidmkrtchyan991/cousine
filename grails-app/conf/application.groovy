@@ -1,5 +1,5 @@
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.active = false
+grails.plugin.springsecurity.active = true
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'cousine.security.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'cousine.security.UserRole'
 grails.plugin.springsecurity.authority.className = 'cousine.security.Role'
@@ -28,3 +28,7 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 
 
 grails.gorm.failOnError = true
+grails.gorm.default.constraints = {
+    '*'(nullable: true)
+}
+grails.plugin.springsecurity.logout.postOnly = false

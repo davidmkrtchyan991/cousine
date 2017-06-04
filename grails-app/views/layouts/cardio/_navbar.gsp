@@ -13,7 +13,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img src="${assetPath(src: 'cardio/logo.png')}" data-active-url="${assetPath(src: 'cardio/logo-active.png')}" alt="">
+                <img src="${assetPath(src: 'cardio/logo.png')}"
+                     data-active-url="${assetPath(src: 'cardio/logo-active.png')}" alt="">
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -23,7 +24,15 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
+                <sec:ifNotLoggedIn>
+                    <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
+                    <li>
+                        <g:link controller="login" action="auth" class="btn btn-blue">Sign In</g:link>
+                    </li>
+                </sec:ifNotLoggedIn>
+                <sec:ifLoggedIn>
+                    <li><g:link controller="logout">Logout</g:link></li>
+                </sec:ifLoggedIn>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
