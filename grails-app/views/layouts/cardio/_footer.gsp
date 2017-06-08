@@ -1,4 +1,5 @@
 <g:render template="/workeat/security/templates/registrationForm"/>
+<g:render template="/workeat/security/templates/loginForm"/>
 
 <footer>
     <div class="container">

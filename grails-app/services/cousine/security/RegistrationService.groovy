@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletRequest
 @Transactional(readOnly = true)
 class RegistrationService {
 
-
     @Autowired
     protected AuthenticationManager authenticationManager
 
@@ -27,13 +26,12 @@ class RegistrationService {
         user.password = springSecurityService.encodePassword(registrationCommand.password)
         user.phone = registrationCommand.phone
         user.save(flush: true)
-//        authenticateUserAndSetSession(user)
+        springSecurityService.reauthenticate(user.username, user.password)
     }
 
 
-
     private void authenticateUserAndSetSession(User user) {
-        HttpServletRequest request =  WebUtils.retrieveGrailsWebRequest().getCurrentRequest()
+        HttpServletRequest request = WebUtils.retrieveGrailsWebRequest().getCurrentRequest()
         String username = user.getUsername();
         String password = user.getPassword();
         UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(username, password);
@@ -45,5 +43,7 @@ class RegistrationService {
         Authentication authenticatedUser = authenticationManager.authenticate(token);
 
         SecurityContextHolder.getContext().setAuthentication(authenticatedUser);
+
+        //OR  WebUtils.retrieveGrailsWebRequest().getCurrentRequest().login(registrationCommand.username, registrationCommand.password)
     }
 }

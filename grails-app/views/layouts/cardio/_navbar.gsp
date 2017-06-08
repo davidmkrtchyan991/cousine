@@ -27,7 +27,7 @@
                 <sec:ifNotLoggedIn>
                     <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
                     <li>
-                        <g:link controller="login" action="auth" class="btn btn-blue">Sign In</g:link>
+                       <a href="#" data-toggle="modal" data-target="#login-form-modal" class="btn btn-blue">Sign In</a>
                     </li>
                 </sec:ifNotLoggedIn>
                 <sec:ifLoggedIn>
